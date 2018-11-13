@@ -2,8 +2,7 @@
 // Foundation
 // ==========================================================================
 
+@import "foundation/_variable";
+@import "foundation/_mixin";
 @import "foundation/_bootstrap-reboot";
-
-h1 {
-    color: green;
-}
+@import "foundation/_base";
