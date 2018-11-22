@@ -1,0 +1,86 @@
+/* Component */
+
+.c-avatar {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.c-txt {
+    margin: 0;
+
+    &-bold {
+        @extend .c-txt;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    &-basic {
+        @extend .c-txt;
+        font-size: 1.0rem;
+    }
+}
+
+.c-sns {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    > li {
+        margin-right: 1.6rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.c-btn {
+    display: inline-block;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: #60abb9;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem .8rem;
+    white-space: initial;
+}
+
+
+/*Project*/
+
+.p-author {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.p-author__avatar-btn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.p-author__avatar {
+    margin: 0 1rem 1rem;
+}
+
+.p-author__info {
+    margin: 1rem 0;
+}

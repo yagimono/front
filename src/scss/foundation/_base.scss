@@ -6,13 +6,3 @@ body {
     font-family: $FONT_FAMILY;
     font-size: 1.4rem;
 }
-
-a {
-    color: red;
-
-    @include max-screen($BREAK_POINT_MD) {
-        color: green;
-    }
-    
-    @include last-mb0;
-}

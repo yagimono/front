@@ -280,10 +280,134 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   font-size: 1.4rem; }
 
-a {
-  color: red; }
-  @media screen and (max-width: 800px) {
-    a {
-      color: green; } }
-  a > :last-child {
-    margin-bottom: 0; }
+.l-header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  background: pink; }
+  @media screen and (max-width: 767px) {
+    .l-header {
+      padding: .5rem 0; } }
+
+.l-footer {
+  text-align: center;
+  padding: 2rem;
+  background: lightgreen; }
+  @media screen and (max-width: 767px) {
+    .l-footer {
+      padding: .5rem 0; } }
+
+.l-main {
+  width: 70%;
+  float: left;
+  padding: 2rem;
+  background: lightblue;
+  box-sizing: border-box; }
+  @media screen and (max-width: 767px) {
+    .l-main {
+      width: 100%;
+      float: none; } }
+
+.l-sidebar {
+  width: 30%;
+  float: left;
+  padding: 2rem;
+  background: lightyellow;
+  box-sizing: border-box; }
+  @media screen and (max-width: 767px) {
+    .l-sidebar {
+      width: 100%;
+      float: none; } }
+
+.u-clearfix::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.outer-box {
+  width: 500px; }
+
+.c-card__photo {
+  padding-bottom: 56%;
+  width: 100%;
+  background: url("http://lorempixel.com/400/400") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.c-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.c-card__avatar {
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  background: url("http://lorempixel.com/400/400") no-repeat;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle; }
+
+/* Component */
+.c-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden; }
+  .c-avatar img {
+    max-width: 100%;
+    height: auto; }
+
+.c-txt, .c-txt-bold, .c-txt-basic {
+  margin: 0; }
+  .c-txt-bold {
+    font-weight: bold;
+    font-size: 1.2rem; }
+  .c-txt-basic {
+    font-size: 1.0rem; }
+
+.c-sns {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0; }
+  .c-sns > li {
+    margin-right: 1.6rem; }
+    .c-sns > li:last-child {
+      margin-right: 0; }
+
+.c-btn {
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  background-color: #60abb9;
+  color: #fff;
+  font-size: .8rem;
+  padding: .5rem .8rem;
+  white-space: initial; }
+
+/*Project*/
+.p-author {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+
+.p-author__avatar-btn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  align-items: center; }
+
+.p-author__avatar {
+  margin: 0 1rem 1rem; }
+
+.p-author__info {
+  margin: 1rem 0; }

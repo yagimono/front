@@ -1,0 +1,52 @@
+.l-header {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    background: pink;
+
+    @media screen and (max-width: 767px) {
+        padding: .5rem 0;
+    }
+}
+
+.l-footer {
+    text-align: center;
+    padding: 2rem;
+    background: lightgreen;
+
+    @media screen and (max-width: 767px) {
+        padding: .5rem 0;
+    }
+}
+
+.l-main {
+    width: 70%;
+    float: left;
+    padding: 2rem;
+    background: lightblue;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.l-sidebar {
+    width: 30%;
+    float: left;
+    padding: 2rem;
+    background: lightyellow;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.u-clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
